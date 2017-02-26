@@ -1,0 +1,278 @@
+$black: #000000;
+$white: #ffffff;
+$grey: #aaaaaa;
+$ivory: #f9f9ea;
+$blue: lightblue;
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: $blue;
+}
+
+.container {
+    height: 100%;
+}
+
+.image {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 1000px;
+    left: 50%;
+    height: 700px;
+    background-color: $blue;
+}
+
+.body {
+    position: absolute;
+    height: 300px;
+    background: darken($grey, 15%);
+    width: 300px;
+    border-radius: 118px;
+    top: 170px;
+    left: 350px;
+}
+
+.head {
+    margin: 0 auto;
+    > div {
+        background-color: $grey;
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        position: absolute;
+    }
+
+    .head-left {
+        top: 100px;
+        left: 400px;
+    }
+
+    .head-right {
+        top: 100px;
+        left: 450px;
+    }
+
+    .head-bottom {
+        top: 175px;
+        left: 412px;
+        height: 175px;
+        width: 175px;
+    }
+}
+
+.trunk {
+    background-color: $grey;
+    height: 340px;
+    width: 80px;
+    position: absolute;
+    left: 460px;
+    top: 200px;
+    border-bottom-right-radius: 54px;
+
+    .trunk-line {
+        width: 60px;
+        height: 5px;
+        background-color: darken($grey, 15%);
+        position: absolute;
+        left: 10px;
+
+        &:nth-of-type(1) {
+            top: 100px;
+            width: 50px;
+            left: 15px;
+        }
+
+        &:nth-of-type(2) {
+            top: 120px;
+        }
+
+        &:nth-of-type(3) {
+            top: 140px;
+            width: 50px;
+            left: 15px;
+        }
+
+        &:nth-of-type(4) {
+            top: 220px;
+        }
+
+        &:nth-of-type(5) {
+            top: 240px;
+            width: 50px;
+            left: 15px;
+        }
+    }
+}
+
+.trunk-back {
+    background: darken($grey, 10%);
+    height: 150px;
+    width: 80px;
+    top: 390px;
+    position: absolute;
+    left: 427px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.ears {
+    > div {
+        background-color: darken($grey, 10%);
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        border-radius: 100%;
+        top: 100px;
+    }
+
+    .ear-left {
+        left: 300px;
+    }
+
+    .ear-right {
+        right: 300px;
+    }
+}
+
+.tusks {
+    > div {
+        width: 108px;
+        height: 108px;
+        position: absolute;
+        right: 0%;
+        top: 253px;
+        border-radius: 0 0 100% 0;
+        transform: rotate(25deg);
+        border-right: 30px solid $ivory;
+    }
+
+    .tusk-left {
+        left: 314px;
+    }
+    .tusk-right {
+        right: 314px;
+        transform: rotateY(180deg) rotate(25deg);
+    }
+
+}
+
+.eyes {
+    > div {
+        background: $white;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        border-radius: 100%;
+        top: 200px;
+
+        .pupil {
+            background: $black;
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            border-radius: 100%;
+            top: 10px;
+        }
+    }
+
+    .eye-left {
+        left: 428px;
+
+        .pupil {
+            left: 11px;
+        }
+    }
+
+    .eye-right {
+        right: 428px;
+
+        .pupil {
+            right: 11px;
+        }
+    }
+}
+
+.legs {
+    > div {
+        > div {
+            position: absolute;
+            height: 400px;
+            width: 100px;
+            border-radius: 10px;
+        }
+    }
+
+    .legs-back {
+        > div {
+            background-color: darken($grey, 20%);
+        }
+
+        .leg-back-left {
+            top: 200px;
+            left: 389px;
+        }
+
+        .leg-back-right {
+            top: 200px;
+            right: 389px;
+        }
+    }
+
+    .legs-front {
+        > div {
+            background-color: darken($grey, 15%);
+            overflow: hidden;
+        }
+
+        .leg-front-left {
+            top: 230px;
+            left: 368px;
+        }
+
+        .leg-front-right {
+            top: 230px;
+            right: 368px;
+        }
+
+        .knee {
+            background-color: darken($grey, 20%);
+            position: absolute;
+            height: 5px;
+
+            &.knee-1 {
+                width: 60px;
+                top: 260px;
+                left: 20px;
+            }
+
+            &.knee-2 {
+                width: 50px;
+                top: 270px;
+                left: 25px;
+            }
+        }
+    }
+
+    .toe {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        bottom: -5px;
+        background-color: #ccc;
+        border-radius: 100%;
+
+        &.toe-1 {
+            left: 10px;
+        }
+        &.toe-2 {
+            left: 40px;
+        }
+        &.toe-3 {
+            left: 70px;
+        }
+    }
+}
