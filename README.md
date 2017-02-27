@@ -2,7 +2,9 @@
 
 An elephant built entirely using HTML and SASS for Day 2 of the #dailycssimages challenge.
 
-[Demo](http://playground.lauracodes.com/css-images/elephant/) - [Edit on CodePen](http://codepen.io/lrobson555/pen/WpvrLZ)
+[Read More](http://www.lauracodes.com/daily-css-images-day-2/) - [Demo](http://playground.lauracodes.com/css-images/elephant/) - [Edit on CodePen](http://codepen.io/lrobson555/pen/WpvrLZ)
+
+![Daily CSS Images Challenge - Elephant](http://www.lauracodes.com/wp-content/uploads/2017/02/elephant.jpg)
 
 ## Credits
 * Mike Mangialardi at [codingartist.io](http://codingartist.io/) for #dailycssimages challenge
